@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper {
+    display: flex;
+}
+
+nav#sidebar {
+    height: 100vh;
+    width: 70px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #d6dbdd;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+nav#sidebar .box-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    border-bottom: 1px solid #d6dbdd;
+}
+
+.box-head .logo img {
+    width: 40px;
+}
+
+.box-body ul.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+ul.menu li {
+    list-style: none;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    margin-top: 15px;
+    border-radius: 50%;
+    color: #131921;
+    font-size: 21px;
+    transition: all 0.1s ease;
+}
+
+ul.menu li a.active {
+    background-color: #e8ebee;
+}
+
+ul.menu li a:hover {
+    background-color: #e8ebee;
+}
+
+
+
+
+#wp-content {
+    width: calc(100% - 70px);
+    position: relative;
+    left: 70px;
+    height: 100vh;
+    overflow: auto;
+}
+
+#wp-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+#wp-content::-webkit-scrollbar-thumb {
+    background: #7f8c8d;
+    border-radius: 15px;
+}
+
+
+
+
+#header {
+    position: fixed;
+    width: calc(100% - 90px);
+    background-color: #fff;
+    height: 65px;
+    border-bottom: 1px solid #d6dbdd;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.profile-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.bar {
+    font-size: 30px;
+}
+
+.search {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #e0e7e8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.search i {
+    position: absolute;
+    left: 10px;
+}
+
+#content {
+    margin-top: 60px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#content img {
+    width: 48%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+#content h1 {
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+#content p {
+    margin-top: 10px;
+    font-size: 15px;
+}
